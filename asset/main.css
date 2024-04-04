@@ -104,3 +104,65 @@ span.material-symbols-outlined{
     display: flex;
     align-items: center;
 }
+.typing-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 10px ;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border: 1px solid var(--gray-color)
+}
+.typing-container .typing-content {
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.typing-content .typing-text-area{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.typing-text-area textarea{
+    width: 100%;
+    height: 55px;
+    border: none;
+    resize: none;
+    font-size: 1rem;
+    padding: 15px 45px 15px 20px;
+    color: var(--text-color);
+    background-color: var(--gray-color);
+    outline: 1px solid var(--gray-color);
+}
+.typing-text-area textarea::placeholder{
+    color: var(--primary-color);
+}
+.typing-text-area .typingarea::valid ~ span{
+    visibility: visible;}
+.typing-text-area span{
+    position: flex;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+}
+.typing-content span{
+    height: 50px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+}
+.typing-control{
+    display: flex;
+}
+.typing-control span{
+    margin-left: 7px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background-color:  var(--gray-color);
+    border: 1px solid var(--gray-color);
+}
